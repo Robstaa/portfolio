@@ -5,6 +5,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Refreshes browser on file change
+# activate :livereload
+
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -12,6 +16,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

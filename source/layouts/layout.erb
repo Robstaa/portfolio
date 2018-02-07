@@ -5,12 +5,20 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Import google fonts       -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Cabin+Sketch" rel="stylesheet">
+
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Robin Zuschke" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+    <!-- Use font awesome -->
+    <script src="https://use.fontawesome.com/d39a38a357.js"></script>
   </head>
   <body>
+    <%= partial 'partials/navbar' %>
     <%= yield %>
+    <%= partial 'partials/footer' %>
   </body>
 </html>
